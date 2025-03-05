@@ -17,11 +17,9 @@ Snap Attend makes attendance management seamless, secure, and efficient with adv
 
 ### 📌 **Request Absent / Permission**
 - Submit absence requests directly from the app.
-- Get approval from administrators with real-time notifications.
 
 ### 📜 **Attendance History**
 - View detailed records of past attendance.
-- Filter by date and status for easy tracking.
 
 ---
 
@@ -42,16 +40,17 @@ Snap Attend is built using modern and efficient technologies:
 
 ---
 
+## 🎯 Why Choose Snap Attend?
+
+With **Snap Attend**, managing attendance has never been easier. Say goodbye to manual registers and fake check-ins—embrace a smarter, more efficient system! 🔥
+
+📌 **Secure** | 🎯 **Accurate** | 🌍 **Location-Based** | 📷 **Face-Verified**
+
+---
+
 ## 📸 Screenshots
 
 Here’s a sneak peek at what you can expect:  
 
 ![app_preview](assets/images/mockup.png)
 
----
-
-## 🎯 Why Choose Snap Attend?
-
-With **Snap Attend**, managing attendance has never been easier. Say goodbye to manual registers and fake check-ins—embrace a smarter, more efficient system! 🔥
-
-📌 **Secure** | 🎯 **Accurate** | 🌍 **Location-Based** | 📷 **Face-Verified**
