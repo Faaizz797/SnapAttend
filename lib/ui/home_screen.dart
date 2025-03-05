@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Zap Attend',
+                  'Snap Attend',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
