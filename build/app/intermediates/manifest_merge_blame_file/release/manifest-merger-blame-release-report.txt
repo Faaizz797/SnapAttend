@@ -1,0 +1,384 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.students_attendance_with_mlkit"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!-- define access to internet, camera, location, and storage -->
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:3:5-78
+11-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:3:22-76
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:4:5-64
+12-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:4:22-62
+13    <!--
+14         Required to query activities that can process text, see:
+15         https://developer.android.com/training/package-visibility and
+16         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+17
+18         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+19    -->
+20    <queries>
+20-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:42:5-47:15
+21        <intent>
+21-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:43:9-46:18
+22            <action android:name="android.intent.action.PROCESS_TEXT" />
+22-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:44:13-72
+22-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:44:21-70
+23
+24            <data android:mimeType="text/plain" />
+24-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:45:13-50
+24-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:45:19-48
+25        </intent>
+26    </queries>
+27
+28    <uses-feature android:name="android.hardware.camera.any" />
+28-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-64
+28-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:7:19-61
+29
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+30-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-71
+30-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-68
+31    <uses-permission
+31-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-13:38
+32        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+32-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-65
+33        android:maxSdkVersion="28" />
+33-->[:camera_android_camerax] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-35
+34    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+35    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+36-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:5-79
+36-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:22-76
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:11:5-67
+37-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:11:22-64
+38
+39    <permission
+39-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+40        android:name="com.example.students_attendance_with_mlkit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.example.students_attendance_with_mlkit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+44
+45    <application
+46        android:name="android.app.Application"
+46-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:7:9-42
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.13.1] /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+48        android:extractNativeLibs="true"
+49        android:icon="@mipmap/ic_launcher"
+49-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:8:9-43
+50        android:label="Snap Attend" >
+50-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:6:9-36
+51        <activity
+51-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:9:9-30:20
+52            android:name="com.example.students_attendance_with_mlkit.MainActivity"
+52-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:10:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:15:13-163
+54            android:exported="true"
+54-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:11:13-36
+55            android:hardwareAccelerated="true"
+55-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:16:13-47
+56            android:launchMode="singleTop"
+56-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:12:13-43
+57            android:taskAffinity=""
+57-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:13:13-36
+58            android:theme="@style/LaunchTheme"
+58-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:14:13-47
+59            android:windowSoftInputMode="adjustResize" >
+59-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:17:13-55
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+67-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:22:13-25:17
+68                android:name="io.flutter.embedding.android.NormalTheme"
+68-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:23:15-70
+69                android:resource="@style/NormalTheme" />
+69-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:24:15-52
+70
+71            <intent-filter>
+71-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:26:13-29:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:27:17-68
+72-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:27:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:28:17-76
+74-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:28:27-74
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+81-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:33:9-35:33
+82            android:name="flutterEmbedding"
+82-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:34:13-44
+83            android:value="2" />
+83-->/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/AndroidManifest.xml:35:13-30
+84
+85        <service
+85-->[:cloud_firestore] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-12:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[:cloud_firestore] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:8:18-89
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+88            android:exported="false" >
+88-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:16:13-37
+89            <meta-data
+89-->[:cloud_firestore] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-11:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+90-->[:cloud_firestore] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:17-134
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:cloud_firestore] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:17-82
+92            <meta-data
+92-->[:firebase_core] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+93-->[:firebase_core] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_core] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:17:13-19:85
+96                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+96-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:18:17-122
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:19:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:20:13-22:85
+99                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+99-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:21:17-111
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-firestore:25.1.2] /Users/master/.gradle/caches/transforms-3/8e640fbee19bac1e49ed8df43d47c2c7/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:22:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/master/.gradle/caches/transforms-3/1e3e33bb5fb0d47da7b8574f0414b734/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+102                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+102-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/master/.gradle/caches/transforms-3/1e3e33bb5fb0d47da7b8574f0414b734/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/master/.gradle/caches/transforms-3/1e3e33bb5fb0d47da7b8574f0414b734/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+105                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+105-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+107        </service>
+108        <service
+108-->[:geolocator_android] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-12:56
+109            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+109-->[:geolocator_android] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-77
+110            android:enabled="true"
+110-->[:geolocator_android] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-35
+111            android:exported="false"
+111-->[:geolocator_android] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+112            android:foregroundServiceType="location" />
+112-->[:geolocator_android] /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-53
+113        <service
+113-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:24:9-33:19
+114            android:name="androidx.camera.core.impl.MetadataHolderService"
+114-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:25:13-75
+115            android:enabled="false"
+115-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:26:13-36
+116            android:exported="false" >
+116-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:27:13-37
+117            <meta-data
+117-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:30:13-32:89
+118                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+118-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:31:17-103
+119                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+119-->[androidx.camera:camera-camera2:1.4.1] /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:32:17-86
+120        </service>
+121
+122        <uses-library
+122-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+123            android:name="androidx.window.extensions"
+123-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+124            android:required="false" />
+124-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+125        <uses-library
+125-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+126            android:name="androidx.window.sidecar"
+126-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+127            android:required="false" />
+127-->[androidx.window:window:1.2.0] /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+128
+129        <service
+129-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:9:9-15:19
+130            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+130-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:10:13-91
+131            android:directBootAware="true"
+131-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:17:13-43
+132            android:exported="false" >
+132-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:11:13-37
+133            <meta-data
+133-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:12:13-14:85
+134                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+134-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:13:17-114
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/master/.gradle/caches/transforms-3/d4666284cf9f2999871219e639d85bf8/transformed/jetified-play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:14:17-82
+136            <meta-data
+136-->[com.google.mlkit:vision-common:17.3.0] /Users/master/.gradle/caches/transforms-3/6f9aae080f5bb3f9b8177d6cb04c09b7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+137                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+137-->[com.google.mlkit:vision-common:17.3.0] /Users/master/.gradle/caches/transforms-3/6f9aae080f5bb3f9b8177d6cb04c09b7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.mlkit:vision-common:17.3.0] /Users/master/.gradle/caches/transforms-3/6f9aae080f5bb3f9b8177d6cb04c09b7/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+139            <meta-data
+139-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:20:13-22:85
+140                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+140-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:21:17-120
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:22:17-82
+142        </service>
+143
+144        <provider
+144-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:9:9-13:38
+145            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+145-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:10:13-78
+146            android:authorities="com.example.students_attendance_with_mlkit.mlkitinitprovider"
+146-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:11:13-69
+147            android:exported="false"
+147-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:12:13-37
+148            android:initOrder="99" />
+148-->[com.google.mlkit:common:18.11.0] /Users/master/.gradle/caches/transforms-3/8f13663659132a030abda93e96ccfd32/transformed/jetified-common-18.11.0/AndroidManifest.xml:13:13-35
+149
+150        <activity
+150-->[com.google.android.gms:play-services-base:18.5.0] /Users/master/.gradle/caches/transforms-3/3f2f1c37c59fd2c35e3ceb9766bb5bad/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+151            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+151-->[com.google.android.gms:play-services-base:18.5.0] /Users/master/.gradle/caches/transforms-3/3f2f1c37c59fd2c35e3ceb9766bb5bad/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+152            android:exported="false"
+152-->[com.google.android.gms:play-services-base:18.5.0] /Users/master/.gradle/caches/transforms-3/3f2f1c37c59fd2c35e3ceb9766bb5bad/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+153            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+153-->[com.google.android.gms:play-services-base:18.5.0] /Users/master/.gradle/caches/transforms-3/3f2f1c37c59fd2c35e3ceb9766bb5bad/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+154
+155        <provider
+155-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+156            android:name="com.google.firebase.provider.FirebaseInitProvider"
+156-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+157            android:authorities="com.example.students_attendance_with_mlkit.firebaseinitprovider"
+157-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+158            android:directBootAware="true"
+158-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+159            android:exported="false"
+159-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+160            android:initOrder="100" />
+160-->[com.google.firebase:firebase-common:21.0.0] /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+161
+162        <meta-data
+162-->[com.google.android.gms:play-services-basement:18.4.0] /Users/master/.gradle/caches/transforms-3/24fc3bd0c48f1a070405a710d6c721af/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+163            android:name="com.google.android.gms.version"
+163-->[com.google.android.gms:play-services-basement:18.4.0] /Users/master/.gradle/caches/transforms-3/24fc3bd0c48f1a070405a710d6c721af/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+164            android:value="@integer/google_play_services_version" />
+164-->[com.google.android.gms:play-services-basement:18.4.0] /Users/master/.gradle/caches/transforms-3/24fc3bd0c48f1a070405a710d6c721af/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+165
+166        <provider
+166-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+167            android:name="androidx.startup.InitializationProvider"
+167-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+168            android:authorities="com.example.students_attendance_with_mlkit.androidx-startup"
+168-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+169            android:exported="false" >
+169-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+170            <meta-data
+170-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+171                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+171-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+172                android:value="androidx.startup" />
+172-->[androidx.emoji2:emoji2:1.2.0] /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+173            <meta-data
+173-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/master/.gradle/caches/transforms-3/ae61ab4d014edf7aa82827a5683af671/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+174                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+174-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/master/.gradle/caches/transforms-3/ae61ab4d014edf7aa82827a5683af671/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+175                android:value="androidx.startup" />
+175-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/master/.gradle/caches/transforms-3/ae61ab4d014edf7aa82827a5683af671/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+176            <meta-data
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+177                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+178                android:value="androidx.startup" />
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+179        </provider>
+180
+181        <receiver
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+182            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+183            android:directBootAware="false"
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+184            android:enabled="true"
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+185            android:exported="true"
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+186            android:permission="android.permission.DUMP" >
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+188                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+189            </intent-filter>
+190            <intent-filter>
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+191                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+192            </intent-filter>
+193            <intent-filter>
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+194                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+195            </intent-filter>
+196            <intent-filter>
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+197                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+198            </intent-filter>
+199        </receiver>
+200
+201        <service
+201-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+202            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+202-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+203            android:exported="false" >
+203-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+204            <meta-data
+204-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+205                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+205-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+206                android:value="cct" />
+206-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/master/.gradle/caches/transforms-3/611d1fc8afc2c37652c85b8e40b76afa/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+207        </service>
+208        <service
+208-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+209            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+209-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+210            android:exported="false"
+210-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+211            android:permission="android.permission.BIND_JOB_SERVICE" >
+211-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+212        </service>
+213
+214        <receiver
+214-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+215            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+215-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+216            android:exported="false" />
+216-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/master/.gradle/caches/transforms-3/c08a79e5fa6fb9328fa92c9d1f055b11/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+217    </application>
+218
+219</manifest>

@@ -1,0 +1,4 @@
+#Wed Mar 05 09:21:19 WIB 2025
+base.0=/Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

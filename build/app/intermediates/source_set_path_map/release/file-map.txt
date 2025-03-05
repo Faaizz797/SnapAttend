@@ -1,0 +1,63 @@
+com.example.students_attendance_with_mlkit.app-jetified-camera-core-1.4.1-0 /Users/master/.gradle/caches/transforms-3/16d6cf4520f31e04a9fcf572ce966288/transformed/jetified-camera-core-1.4.1/res
+com.example.students_attendance_with_mlkit.app-jetified-camera-camera2-1.4.1-1 /Users/master/.gradle/caches/transforms-3/1aa5fecb82907d3f7ddacdeac37caab7/transformed/jetified-camera-camera2-1.4.1/res
+com.example.students_attendance_with_mlkit.app-core-runtime-2.2.0-2 /Users/master/.gradle/caches/transforms-3/1dda91cea8b6ffa6ec06977b18db4d16/transformed/core-runtime-2.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-camera-lifecycle-1.4.1-3 /Users/master/.gradle/caches/transforms-3/1e3300b4c26f2712d38d8ce0e6882eef/transformed/jetified-camera-lifecycle-1.4.1/res
+com.example.students_attendance_with_mlkit.app-jetified-play-services-basement-18.4.0-4 /Users/master/.gradle/caches/transforms-3/24fc3bd0c48f1a070405a710d6c721af/transformed/jetified-play-services-basement-18.4.0/res
+com.example.students_attendance_with_mlkit.app-core-1.13.1-5 /Users/master/.gradle/caches/transforms-3/25303bfa731ad2ab17d3513b6410954f/transformed/core-1.13.1/res
+com.example.students_attendance_with_mlkit.app-lifecycle-runtime-2.7.0-6 /Users/master/.gradle/caches/transforms-3/25d7fb859c1c2408c467a9384501f08d/transformed/lifecycle-runtime-2.7.0/res
+com.example.students_attendance_with_mlkit.app-jetified-activity-ktx-1.8.1-7 /Users/master/.gradle/caches/transforms-3/32872ec538dd14211d2e6635d5f6c073/transformed/jetified-activity-ktx-1.8.1/res
+com.example.students_attendance_with_mlkit.app-lifecycle-viewmodel-2.7.0-8 /Users/master/.gradle/caches/transforms-3/331e6def37b6f31d44e288907978ac31/transformed/lifecycle-viewmodel-2.7.0/res
+com.example.students_attendance_with_mlkit.app-jetified-camera-video-1.4.1-9 /Users/master/.gradle/caches/transforms-3/376e386afdbcacefa0806204b4efe0cc/transformed/jetified-camera-video-1.4.1/res
+com.example.students_attendance_with_mlkit.app-appcompat-1.6.1-10 /Users/master/.gradle/caches/transforms-3/3c50a76fb6980fabc8ac55022ed6423c/transformed/appcompat-1.6.1/res
+com.example.students_attendance_with_mlkit.app-jetified-play-services-base-18.5.0-11 /Users/master/.gradle/caches/transforms-3/3f2f1c37c59fd2c35e3ceb9766bb5bad/transformed/jetified-play-services-base-18.5.0/res
+com.example.students_attendance_with_mlkit.app-jetified-appcompat-resources-1.6.1-12 /Users/master/.gradle/caches/transforms-3/3ff6177fc97676c1f8e8714ce0766fa4/transformed/jetified-appcompat-resources-1.6.1/res
+com.example.students_attendance_with_mlkit.app-jetified-core-1.0.0-13 /Users/master/.gradle/caches/transforms-3/411aa761d6d68814c57f6496aab48ca0/transformed/jetified-core-1.0.0/res
+com.example.students_attendance_with_mlkit.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-14 /Users/master/.gradle/caches/transforms-3/454bc818b7e897e5b819765a3621dbd5/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/res
+com.example.students_attendance_with_mlkit.app-slidingpanelayout-1.2.0-15 /Users/master/.gradle/caches/transforms-3/51e0b5bd3b1300dbea58a64622bb3182/transformed/slidingpanelayout-1.2.0/res
+com.example.students_attendance_with_mlkit.app-lifecycle-livedata-2.7.0-16 /Users/master/.gradle/caches/transforms-3/5a0964ab42277feb25ad7d19376c0b8d/transformed/lifecycle-livedata-2.7.0/res
+com.example.students_attendance_with_mlkit.app-coordinatorlayout-1.0.0-17 /Users/master/.gradle/caches/transforms-3/6068ff0335827b7e24c392700c733db0/transformed/coordinatorlayout-1.0.0/res
+com.example.students_attendance_with_mlkit.app-jetified-activity-1.8.1-18 /Users/master/.gradle/caches/transforms-3/62ac00d169f29908206165cd8c63b11e/transformed/jetified-activity-1.8.1/res
+com.example.students_attendance_with_mlkit.app-jetified-window-java-1.2.0-19 /Users/master/.gradle/caches/transforms-3/7287e5ea7b95eddddc908bf3cac69c02/transformed/jetified-window-java-1.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-fragment-ktx-1.7.1-20 /Users/master/.gradle/caches/transforms-3/7c302edb25d02ff22bd0a20ebd9fb61a/transformed/jetified-fragment-ktx-1.7.1/res
+com.example.students_attendance_with_mlkit.app-jetified-core-ktx-1.13.1-21 /Users/master/.gradle/caches/transforms-3/83b4a160ae86d0c651432042e9652c8e/transformed/jetified-core-ktx-1.13.1/res
+com.example.students_attendance_with_mlkit.app-fragment-1.7.1-22 /Users/master/.gradle/caches/transforms-3/8db813eb8aefdbe335df79386252ee91/transformed/fragment-1.7.1/res
+com.example.students_attendance_with_mlkit.app-jetified-profileinstaller-1.3.1-23 /Users/master/.gradle/caches/transforms-3/90a73ae9e6e8f559121f9ee864303eeb/transformed/jetified-profileinstaller-1.3.1/res
+com.example.students_attendance_with_mlkit.app-jetified-lifecycle-livedata-core-ktx-2.7.0-24 /Users/master/.gradle/caches/transforms-3/90c8883de1eb4e659ad6246d2375e6a9/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/res
+com.example.students_attendance_with_mlkit.app-preference-1.2.1-25 /Users/master/.gradle/caches/transforms-3/92e75beef429ccb044045153d4ea15b8/transformed/preference-1.2.1/res
+com.example.students_attendance_with_mlkit.app-jetified-emoji2-views-helper-1.2.0-26 /Users/master/.gradle/caches/transforms-3/98f82d5154a933e3b8b5d224df7740b3/transformed/jetified-emoji2-views-helper-1.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-datastore-preferences-release-27 /Users/master/.gradle/caches/transforms-3/9decbf8e9abb5af831f37707b2380765/transformed/jetified-datastore-preferences-release/res
+com.example.students_attendance_with_mlkit.app-jetified-startup-runtime-1.1.1-28 /Users/master/.gradle/caches/transforms-3/a209272a9e69cf8cfa53211dd93621e9/transformed/jetified-startup-runtime-1.1.1/res
+com.example.students_attendance_with_mlkit.app-jetified-lifecycle-viewmodel-ktx-2.7.0-29 /Users/master/.gradle/caches/transforms-3/a9fd4510eebfd9c4b9d5e2a23ab8e2c0/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/res
+com.example.students_attendance_with_mlkit.app-jetified-lifecycle-process-2.7.0-30 /Users/master/.gradle/caches/transforms-3/ae61ab4d014edf7aa82827a5683af671/transformed/jetified-lifecycle-process-2.7.0/res
+com.example.students_attendance_with_mlkit.app-jetified-window-1.2.0-31 /Users/master/.gradle/caches/transforms-3/aefb9ac74908ffdd3c190cdd84606721/transformed/jetified-window-1.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-savedstate-1.2.1-32 /Users/master/.gradle/caches/transforms-3/b9f1ea6efbb826a36f2ce3f86b5b33a2/transformed/jetified-savedstate-1.2.1/res
+com.example.students_attendance_with_mlkit.app-jetified-savedstate-ktx-1.2.1-33 /Users/master/.gradle/caches/transforms-3/caf79db39d0b7b3172039663e8bb2ce1/transformed/jetified-savedstate-ktx-1.2.1/res
+com.example.students_attendance_with_mlkit.app-jetified-tracing-ktx-1.2.0-34 /Users/master/.gradle/caches/transforms-3/cc05d5459466d91a84c81c8702a221f6/transformed/jetified-tracing-ktx-1.2.0/res
+com.example.students_attendance_with_mlkit.app-transition-1.4.1-35 /Users/master/.gradle/caches/transforms-3/d5444f91e8cf88de977bd16293435b93/transformed/transition-1.4.1/res
+com.example.students_attendance_with_mlkit.app-jetified-datastore-core-release-36 /Users/master/.gradle/caches/transforms-3/d815cf2dc05d8c59d4cda6961950be3a/transformed/jetified-datastore-core-release/res
+com.example.students_attendance_with_mlkit.app-recyclerview-1.0.0-37 /Users/master/.gradle/caches/transforms-3/da58976db3c041a397e955d2957e7afd/transformed/recyclerview-1.0.0/res
+com.example.students_attendance_with_mlkit.app-lifecycle-livedata-core-2.7.0-38 /Users/master/.gradle/caches/transforms-3/df49c5ccabcc93c70e3456a49e420f4c/transformed/lifecycle-livedata-core-2.7.0/res
+com.example.students_attendance_with_mlkit.app-jetified-datastore-release-39 /Users/master/.gradle/caches/transforms-3/e1cb5c8601c55104c8a18c7bc1b90128/transformed/jetified-datastore-release/res
+com.example.students_attendance_with_mlkit.app-jetified-annotation-experimental-1.4.1-40 /Users/master/.gradle/caches/transforms-3/e2ecc9b3b9946566ccd473d4d48ba327/transformed/jetified-annotation-experimental-1.4.1/res
+com.example.students_attendance_with_mlkit.app-jetified-tracing-1.2.0-41 /Users/master/.gradle/caches/transforms-3/e87384b63de789d9dc453be8bf8576b8/transformed/jetified-tracing-1.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-emoji2-1.2.0-42 /Users/master/.gradle/caches/transforms-3/e8a9926304caa2075e6884469b1b7176/transformed/jetified-emoji2-1.2.0/res
+com.example.students_attendance_with_mlkit.app-jetified-firebase-common-21.0.0-43 /Users/master/.gradle/caches/transforms-3/eca4333cb219929078e4b58375a8cccc/transformed/jetified-firebase-common-21.0.0/res
+com.example.students_attendance_with_mlkit.app-jetified-lifecycle-runtime-ktx-2.7.0-44 /Users/master/.gradle/caches/transforms-3/fa44622c27dd34f853bc7b7d1aaae45c/transformed/jetified-lifecycle-runtime-ktx-2.7.0/res
+com.example.students_attendance_with_mlkit.app-main-45 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/main/res
+com.example.students_attendance_with_mlkit.app-release-46 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/android/app/src/release/res
+com.example.students_attendance_with_mlkit.app-google-services-47 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/generated/res/google-services/release
+com.example.students_attendance_with_mlkit.app-pngs-48 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/generated/res/pngs/release
+com.example.students_attendance_with_mlkit.app-resValues-49 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/generated/res/resValues/release
+com.example.students_attendance_with_mlkit.app-packageReleaseResources-50 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.example.students_attendance_with_mlkit.app-packageReleaseResources-51 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.example.students_attendance_with_mlkit.app-merged-not-compiled-resources-52 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/intermediates/merged-not-compiled-resources/release
+com.example.students_attendance_with_mlkit.app-merged_res-53 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/app/intermediates/merged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-54 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/camera_android_camerax/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-55 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/cloud_firestore/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-56 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/firebase_core/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-57 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-58 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geocoding_android/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-59 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/geolocator_android/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-60 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/google_mlkit_commons/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-61 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/google_mlkit_face_detection/intermediates/packaged_res/release
+com.example.students_attendance_with_mlkit.app-packaged_res-62 /Users/master/Desktop/Maniak Flutter/Absensi/students_attendance_with_mlkit/build/shared_preferences_android/intermediates/packaged_res/release
